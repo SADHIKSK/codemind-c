@@ -1,9 +1,8 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int r;
-    float pi=3.14,ar;
-    scanf("%d",&r);
-    ar=pi*r*r;
-    printf("%.2f",ar);
+    float a,r,pi=3.14;
+    scanf("%f",&r);
+    a=pi*r*r;
+    printf("%.2f",a);
 }
