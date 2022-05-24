@@ -1,19 +1,16 @@
 #include<stdio.h>
-int main ()
+int main()
 {
-int num, remider, Largest= 0;
-
-scanf ("%d", &num);
-
-while (num > 0)
+    int num,larg=0,x;
+    scanf("%d",&num);
+    while(num)
     {
-remider = num % 10;
-if (Largest < remider)
- {
-       Largest = remider;
- }
-num = num / 10;
+        x=num%10;
+        if(x>larg)
+        {
+            larg=x;
+        }
+        num/=10;
     }
-printf ("%d", Largest);
-return 0;
+    printf("%d",larg);
 }
