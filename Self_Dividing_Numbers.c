@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,r,c,co,num;
+    int a,b,r,c,co,n;
     scanf("%d%d",&a,&b);
     for(;a<=b;a++)
     {
-        num=a;
+        n=a;
         co=0;
         c=0;
-        while(num)
+        while(n)
         {
-            r=num%10;
-            num/=10;
+            r=n%10;
+            n/=10;
             co++;
             if(r==0)
             break;
