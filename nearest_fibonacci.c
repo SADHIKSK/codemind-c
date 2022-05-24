@@ -1,24 +1,25 @@
+/* Nearest Fibonacci */
 #include<stdio.h>
 int main()
 {
-    int f=0,s=1,n=0,num;
-    scanf("%d",&num);
-    while(num>n)
-    {
-        n=f+s;
-        f=s;
-        s=n;
-    }
-    if(num-f<s-num)
-    {
-        printf("%d",f);
-    }
-    else if(num-f==s-num)
-    {
-        printf("%d %d",f,s);
-    }
-    else
-    {
-        printf("%d ",s);
-    }
+	int first=0,second=1,next=0,number;
+	scanf("%d",&number);
+	while(number>next)
+	{
+		next=first+second;
+		first=second;
+		second=next;
+	}
+	if(number-first<second-number)
+	{
+		printf("%d",first);
+	}
+	else if(number-first==second-number)
+	{
+		printf("%d %d",first,second);
+	}
+	else
+	{
+		printf("%d",second);
+	}
 }
