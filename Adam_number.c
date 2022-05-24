@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,rev=0,sqnum,sqrev,temp,num=0,temp1;
-    scanf("%d",&n);
-    sqnum=n*n;
-    temp=n;
+    int number,rev=0,sqnum,sqrev,temp,num=0,temp1;
+    scanf("%d",&number);
+    sqnum=number*number;
+    temp=number;
     while(temp)
     {
         rev=(rev*10)+temp%10;
